@@ -38,6 +38,33 @@ ul{
 
 li > img{
     padding-left: 10px;
-    list-style-type: lower-alpha;
 }
+
+#education-icon {
+    position: relative;
+    top: 50px;
+    left: 120px;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-flow: column;
+   
+}
+/* .yildiz-univeristy {
+    position: relative;
+    top: 21px;
+    left: 320px;
+}
+.istanbul-univeristy {
+    position: relative;
+    top: 21px;
+    left: 320px;
+} */
 
