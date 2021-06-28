@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 100px;
+  background-color: wheat;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  background-color: rgb(26, 94, 94, 0.7);
+  border-radius: 50px;
+  text-align: center;
+}
+
+.summary {
+  background-color: rgb(42, 105, 105, 0.3);
+  box-shadow: 5px 20px 50px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  padding-left: 10px;
+  padding-right: 200px;
+  padding-top: 10px;
+  padding-bottom: 6px;
+}
+
+.summary > p:first-of-type {
+  text
+}
+.summary > p {
+  height: %20;
+  width: %80;
+}
+
+ul{
+    list-style-image: url('./icons/arrow_right_alt_white_18dp.svg');
+}
+
+li > img{
+    padding-left: 10px;
+    list-style-type: lower-alpha;
+}
+
