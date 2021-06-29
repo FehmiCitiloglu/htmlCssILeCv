@@ -148,6 +148,10 @@ ul {
 li:hover {
   font-size: 30px;
 }
+
+li li:hover{
+  font: 1em sans-serif;
+}
 li li > img {
   padding-left: 10px;
 }
@@ -178,11 +182,11 @@ li li > img {
 
 #education-icon {
   position: relative;
-  left: 450px;
+  left: -1px;
   top: 48px;
   width: 40px;
   height: 30px;
-  float: right;
+  /* float: right; */
 }
 
 .education {
@@ -261,9 +265,9 @@ li li > img {
   }
   #education-icon {
     position: relative;
-    left: -1px;
+    left: 5%;
     width: 40px;
     height: 30px;
-    float: right;
+    /* float: right; */
   }
 }
