@@ -149,7 +149,7 @@ li:hover {
   font-size: 30px;
 }
 
-li li:hover{
+li li:hover {
   font: 1em sans-serif;
 }
 li li > img {
@@ -180,7 +180,7 @@ li li > img {
   position: inherit;
 }
 
-#education-icon {
+#portfolio-icon {
   position: relative;
   left: -1px;
   top: 48px;
@@ -189,15 +189,20 @@ li li > img {
   /* float: right; */
 }
 
-.education {
+.portfolio {
   background: linear-gradient(gray, red);
   display: flex;
   flex-direction: column;
   text-align: center;
+  width: 30rem;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-
+.portfolio ul li a,
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -249,8 +254,8 @@ li li > img {
     /* background-color: rgb(26, 94, 94, 0.7); */
     /* border-radius: 50px; */
     /* text-align: center; */
-    -webkit-animation: slide-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; *
+    -webkit-animation: slide-top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
   .summary {
     text-align: center;
@@ -263,7 +268,7 @@ li li > img {
     height: auto;
     margin-bottom: 50px;
   }
-  #education-icon {
+  #portfolio-icon {
     position: relative;
     left: 5%;
     width: 40px;
@@ -271,3 +276,14 @@ li li > img {
     /* float: right; */
   }
 }
+
+/* .portfolio {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 10px;
+  justify-content: safe;
+  background: red;
+  border-radius: 10px;
+  width: auto;
+} */
