@@ -204,11 +204,14 @@ li li > img {
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 27rem;
+  width: 25rem;
+  height: 21rem;
   border-radius: 20px;
   position: absolute;
   right: 5rem;
   top: 34rem;
+  -webkit-animation: shadow-pop-tr 0.9s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation: shadow-pop-tr 0.8s cubic-bezier(0.47, 0, 0.745, 0.715) both;
   /* border-top-left-radius: 20px;
   border-top-right-radius: 20px; */
 }
@@ -253,14 +256,14 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: -content;
+    width: fit-content;
   }
   .title {
     /* display: flex; */
     /* flex-direction: column; */
     /* justify-content: flex-start; */
     width: auto;
-    height: auto;
+    height: fit-content;
     position: relative;
     top: -50px;
     padding-bottom: 5px;
@@ -270,6 +273,21 @@ a:hover {
     /* text-align: center; */
     -webkit-animation: slide-top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     animation: slide-top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  .title a button {
+    width: auto;
+    height: auto;
+    background-color: brown;
+    font-size: large;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    -webkit-animation: slide-top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  .title a button:hover {
+    background-color: rgb(207, 21, 21);
+    font-size: larger;
   }
   .summary {
     /* text-align: center;*/
@@ -289,6 +307,27 @@ a:hover {
     height: 30px;
     /* float: right; */
   }
+  .portfolio {
+    background: linear-gradient(gray, red);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 20rem;
+    height: 25rem;
+    border-radius: 20px;
+    position: relative;
+    width: auto;
+    height: auto;
+    top: -1px;
+    left: 0;
+    /*right: 5rem;
+    top: 34rem; */
+    -webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.02, 0.92, 0.91, 0.37)
+      both;
+    animation: shadow-pop-tr 0.3s cubic-bezier(0.02, 0.92, 0.91, 0.37) both;
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px; */
+  }
 }
 
 /* .portfolio {
@@ -301,3 +340,12 @@ a:hover {
   border-radius: 10px;
   width: auto;
 } */
+@media only screen and (min-width: 1400px) {
+  .portfolio {
+    width: 35rem;
+    height: 21rem;
+    position: absolute;
+    right: 7rem;
+    top: 34rem;
+  }
+}
